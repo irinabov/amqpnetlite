@@ -28,7 +28,7 @@ jobs:
       run: cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools"
     - name: VsDevCmd.bat
       shell: cmd
-      run: VsDevCmd.bat -help
+      run: VsDevCmd -help
     - name: Test 7z
       shell: cmd
       run: 7z
