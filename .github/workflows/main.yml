@@ -25,4 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run build
       shell: cmd
+      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat"
+      run: VsDevCmd.bat -help
+      run: 7z
       run: echo "call .\build.cmd"
