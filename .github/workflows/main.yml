@@ -23,9 +23,15 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run build
+    - name: Test VsDevCmd.bat
       shell: cmd
       run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat"
+    - name: Test VsDevCmd.bat -help
+      shell: cmd
       run: VsDevCmd.bat -help
+    - name: Test 7z
+      shell: cmd
       run: 7z
+    - name: Test echo
+      shell: cmd
       run: echo "call .\build.cmd"
