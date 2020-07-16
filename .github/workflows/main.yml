@@ -25,7 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Test VsDevCmd.bat -help
       shell: cmd
-      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\"
+      run: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise"
     - name: Test 7z
       shell: cmd
       run: 7z
